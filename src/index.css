@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Odibee+Sans&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+}
+
+h1 {
+  font-family: "Odibee Sans", sans-serif;
+}
+@keyframes move {
+  0% {
+    transform: translateY(0rem);
+  }
+  100% {
+    transform: translateY(2rem);
+  }
+
+  50% {
+    transform: translateY(-2rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
+.animate {
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-name: move;
+}
